@@ -8,3 +8,7 @@ import Pkg
 Pkg.activate(".")
 Pkg.add("IJulia")
 Pkg.build("IJulia")
+using IJulia
+IJulia.installkernel("Julia", "--project=.")
+
+
